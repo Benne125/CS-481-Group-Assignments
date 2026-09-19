@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/groupImage"
+        android:layout_width="367dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/group_picture_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/group_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appTitle" />
+
+    <TextView
+        android:id="@+id/groupHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/group_heading"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/groupImage" />
+
+    <TextView
+        android:id="@+id/memberOneName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/member_one"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/groupHeading"
+        app:layout_constraintTop_toBottomOf="@id/groupHeading" />
+
+    <TextView
+        android:id="@+id/memberOneEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="@string/email_one"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/memberOneName"
+        app:layout_constraintTop_toTopOf="@id/memberOneName" />
+
+    <TextView
+        android:id="@+id/memberTwoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/member_two"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/memberOneName"
+        app:layout_constraintTop_toBottomOf="@id/memberOneName" />
+
+    <TextView
+        android:id="@+id/memberTwoEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/email_two"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/memberTwoName"
+        app:layout_constraintTop_toTopOf="@id/memberTwoName" />
+
+    <TextView
+        android:id="@+id/memberThreeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/member_three"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/memberTwoName"
+        app:layout_constraintTop_toBottomOf="@id/memberTwoName" />
+
+    <TextView
+        android:id="@+id/memberThreeEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/email_three"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/memberThreeName"
+        app:layout_constraintTop_toTopOf="@id/memberThreeName" />
+
+    <TextView
+        android:id="@+id/calculatorHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/calculator_heading"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/memberThreeName" />
+
+    <EditText
+        android:id="@+id/scoreInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/score"
+        android:inputType="numberDecimal|numberSigned"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculatorHeading" />
+
+    <Button
+        android:id="@+id/showGradeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/show_grade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scoreInput" />
+
+    <TextView
+        android:id="@+id/gradeResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/results"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showGradeButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
