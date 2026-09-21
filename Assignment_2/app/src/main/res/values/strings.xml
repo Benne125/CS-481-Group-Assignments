@@ -22,5 +22,15 @@
     <string name="empty_score">Please enter a score.</string>
     <string name="invalid_Number">Please enter a valid number.</string>
     <string name="invalid_Range">Score must be between 0 and 100.</string>
-    <string name="grade_result">You got a %1$s grade.</string>
+    <string name="grade_result">You got an %1$s grade.</string>
+
+    <string name="grade_A">A</string>
+    <string name="grade_A_minus">A-</string>
+    <string name="grade_B_plus">B+-</string>
+    <string name="grade_B">B</string>
+    <string name="grade_B_minus">B-</string>
+    <string name="grade_C_plus">C+-</string>
+    <string name="grade_C">C</string>
+    <string name="grade_C_minus">C-</string>
+    <string name="grade_F">F</string>
 </resources>
